@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Contato</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho_menu">
+            <a class="cabecalho_menu_link" href="./index.html">Início</a>
+            <a class="cabecalho_menu_link" href="./sobreMim.html">Sobre Mim</a>
+            <a class="cabecalho_menu_link" href="./cv.html">Currículo</a>
+            <a class="cabecalho_menu_link" href="./contato.html">Contato</a>
+        </nav>
+   </header>
+
+   <main class="apresentacao"> 
+    <section class="apresentacao_conteudo"> 
+
+        <form action="." class="container__contato--form" method="post">
+        <div class="container__contato--form-conteudo">
+          <h1 class="apresentacao_conteudo_titulo">Vamos conversar?</h1>
+          <p class="apresentacao_conteudo_texto">Se você quer dar vida para suas ideias, fique à vontade para me contactar.</p>
+        </div>
+        <div class="container__contato--inputs">
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" placeholder="Digite seu nome completo" name="nome" required/>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Digite seu email" name="email" required/>
+
+          <label for="telefone">Telefone</label>
+          <input id="telefone" type="text" placeholder="(XX) XXXX-XXXX" name="telefone" required/>
+
+          <fieldset aria-labelledby="titulo-contato">
+            <legend class="container__contato--inputs--titulo">Prefere contato por:</legend>
+            <div class="container__contato--inputs--div">
+
+              <div>
+                <input type="radio" id="ligacao" name="contato"/>
+                <label for="ligacao">Ligação</label>
+              </div>
+
+              <div>
+                <input type="radio" id="whatsapp" nome="contato"/>
+                <label for="whatsapp">WhatsApp</label>
+              </div>
+
+              <div>
+                <input type="radio" id="email-contato" name="contato" />
+                <label for="email-contato">Email</label>
+              </div>
+
+            </div>
+
+          </fieldset>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" type="text" placeholder="Escreva sua mensagem" maxlength="500" name="mensagem"></textarea>
+        </div>
+        <button>Enviar</button>
+      </form>
+
+   </section>     
+   </main>
+   
+<footer class="rodape"> 
+    Desenvolvido por Carla Hetterich Worlitz no curso de <span lang="en">Web Design</span> da FIAP.
+ </footer>
+</body>
+</html>

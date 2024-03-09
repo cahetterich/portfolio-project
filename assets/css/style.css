@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --cor-primaria: #1B1617;
+    --cor-secundaria: #F3F4EA;
+    --cor-tercearia: #a077a0;    
+    --cor-hover: #58575765;
+
+    --fonte-primaria: "Barlow Condensed", sans-serif;
+    --fonte-secundaria : "League Spartan", sans-serif;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+}
+
+body { 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    height: 100vh;
+    color: var(--cor-secundaria);  
+    font-size: 1.6rem; 
+}
+
+li {
+    padding: 1rem;
+    list-style: none;    
+}
+
+fieldset {
+    border: none;
+  }
+
+  
+.cabecalho_menu {
+    background-color: #1B1617; 
+    display: flex;    
+    padding: 0 20rem;
+    width: 100%; 
+    gap: 8rem; 
+    position: fixed;  
+    background: rgba(14, 14, 14, 0.658);
+    box-shadow: 0 8px 32px 0 rgba(137, 79, 143, 0.37);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );  
+}
+
+.cabecalho_menu_link {
+    font-family: var(--fonte-secundaria);
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 2rem 0;    
+    cursor: pointer;
+}
+
+.cabecalho_menu_link:hover {
+    color: var(--cor-tercearia);    
+}
+    
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 9% 15%;
+}
+
+.apresentacao_conteudo {
+    width: 61.5rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.apresentacao_conteudo_titulo {
+    font-size: 3rem; 
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-tercearia);
+    font-weight: bold;        
+}
+
+.apresentacao_conteudo_texto {
+    font-size: 2.4rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-secundaria);  
+    margin-bottom: 3.6rem;  
+}
+
+.titulo-destaque {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-size: 4rem;
+    padding: 1rem;
+    font-weight:bold; 
+    font-style: italic;
+}
+
+.imagem {
+    width: 30%;
+}
+
+.apresentacao_links {
+    display: flex; 
+    justify-content: space-between;     
+    align-items: center;  
+    gap: 3rem;
+}
+
+.apresentacao_links_link {   
+    background-color: var(--cor-tercearia);   
+    display: inline-block;   
+    width: 15rem;     
+    text-align:center;
+    border-radius: 30px;
+    font-size: 2.4rem;    
+    font-family: var(--fonte-primaria);
+    font-weight: 600;
+    transition: .3s all ease-in-out;
+    color: var(--cor-secundaria);
+    padding: 1rem 1.5rem;
+    text-decoration: none;    
+    margin-right: 10px; 
+    margin-bottom: 10px;  
+    cursor: pointer;
+}   
+
+.apresentacao_links_link:hover {
+    background-color: var(--cor-primaria); 
+    border: 2px solid var(--cor-primaria);    
+    background: rgba(109, 109, 109, 0.336);  
+    box-shadow: 2px 8px 15px 0 rgba(137, 79, 143, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 10px);  
+}
+
+.rodape { 
+    background-color: var(--cor-tercearia) ;
+    color: var(--cor-primaria);
+    padding: 2.4rem;    
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+.apresentacao_conteudo_texto a {
+    text-decoration: none;
+    color: var(--cor-tercearia);
+}
+
+.container__contato--form {
+    background: transparent;
+    border: 2px solid var(--cor-primaria);         
+    box-shadow: 2px 8px 15px 0 rgba(137, 79, 143, 0.37);      
+    padding: 1.4rem 2rem;
+    border-radius: 3.4rem; 
+    display: flex;   
+    flex-direction: column;
+    row-gap: 1rem;    
+    font-family: var(--fonte-secundaria);
+}
+
+.container__contato--form h1 {
+    padding: 1.4rem 0;
+}
+
+.container__contato--inputs {
+    display: grid;
+    gap: 2rem;    
+}
+
+.container__contato--form label {    
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);    
+}
+
+.container__contato--inputs input, 
+.container__contato--inputs textarea {
+    border-radius: 3.4rem;
+    padding: 1.4rem;
+    border: none;
+    font-size: 1.6rem;    
+    background-color: var(--cor-secundaria);
+}
+
+.container__contato--inputs textarea {
+    height: 8rem;
+}
+
+.container__contato--inputs--titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-tercearia);
+}
+
+.container__contato--inputs--div {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+    padding: 2rem;
+}
+
+.container__contato--form button {
+    margin: 2rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 2.4rem;
+    background: var(--cor-tercearia);
+    font-weight: 600;
+}
+
+.container__contato--form button:hover {
+    background-color: var(--cor-primaria); 
+    border: 2px solid var(--cor-primaria);    
+    background: rgba(109, 109, 109, 0.336);  
+    box-shadow: 2px 8px 15px 0 rgba(137, 79, 143, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 10px);  
+     cursor: pointer;
+}
+
+.apresentacao_conteudo_texto a {
+    text-decoration: none;
+    color: var(--cor-tercearia);
+}
+
+.container__contato--form {
+    background: transparent;
+    border: 2px solid var(--cor-primaria);         
+    box-shadow: 2px 8px 15px 0 rgba(137, 79, 143, 0.37);      
+    padding: 1.4rem 2rem;
+    border-radius: 3.4rem; 
+    display: flex;   
+    flex-direction: column;
+    row-gap: 1rem;    
+    font-family: var(--fonte-secundaria);
+}
+
+.container__contato--form h1 {
+    padding: 1.4rem 0;
+}
+
+.container__contato--inputs {
+    display: grid;
+    gap: 2rem;    
+}
+
+.container__contato--form label {    
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);    
+}
+
+.container__contato--inputs input, 
+.container__contato--inputs textarea {
+    border-radius: 3.4rem;
+    padding: 1.4rem;
+    border: none;
+    font-size: 1.6rem;    
+    background-color: var(--cor-secundaria);
+}
+
+.container__contato--inputs textarea {
+    height: 8rem;
+}
+
+.container__contato--inputs--titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--cor-tercearia);
+}
+
+.container__contato--inputs--div {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 3.5rem;
+    padding: 2rem;
+}
+
+.container__contato--form button {
+    margin: 2rem;
+    height: 4.8rem;
+    border: none;
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 2.4rem;
+    background: var(--cor-tercearia);
+    font-weight: 600;
+}
+
+.container__contato--form button:hover {
+    background-color: var(--cor-primaria); 
+    border: 2px solid var(--cor-primaria);    
+    background: rgba(109, 109, 109, 0.336);  
+    box-shadow: 2px 8px 15px 0 rgba(137, 79, 143, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 10px);  
+     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .apresentacao {
+        flex-direction: column-reverse;  
+        padding: 10%;      
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+  }
+
+ @media only screen and (max-width: 500px) {
+   
+    .cabecalho_menu {
+        justify-content:center;
+        align-items: center;    
+        padding: 0.5rem;
+        gap: 4rem; 
+    }
+
+    .cabecalho_menu_link {        
+        padding: 2rem auto;         
+        font-size: 1.6rem;
+        display: flex;        
+        align-items: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;  
+        padding: 30% 10% 10%;      
+    }
+
+    .apresentacao_conteudo {
+        width: auto;
+    }
+
+    .apresentacao_links {        
+        flex-direction: column;        
+    }
+
+    .apresentacao_conteudo_texto li a.linkdocertificado {
+        display: block;        
+      }
+
+
+      .container__contato--inputs--div {                
+        flex-direction: column;
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+  }
+
+
+  
