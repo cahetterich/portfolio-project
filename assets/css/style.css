@@ -104,21 +104,22 @@ fieldset {
 }
 
 .imagem {
-    width: 30%;
+    width: 35%;
 }
 
 .apresentacao_links {
     display: flex; 
-    justify-content: space-between;     
+    justify-content: space-between;         
     align-items: center;  
     gap: 3rem;
 }
+
 
 .apresentacao_links_link {   
     background-color: var(--cor-tercearia);   
     display: inline-block;   
     width: 15rem;     
-    text-align:center;
+    text-align:center;       
     border-radius: 30px;
     font-size: 2.4rem;    
     font-family: var(--fonte-primaria);
@@ -264,7 +265,7 @@ fieldset {
 
 .container__contato--inputs input, 
 .container__contato--inputs textarea {
-    border-radius: 3.4rem;
+    border-radius: 1rem;
     padding: 1.4rem;
     border: none;
     font-size: 1.6rem;    
