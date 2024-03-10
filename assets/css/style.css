@@ -30,7 +30,7 @@ body {
 
 li {
     padding: 1rem;
-    list-style: none;    
+    list-style: url("../image/plane.png");    
 }
 
 fieldset {
@@ -131,6 +131,8 @@ fieldset {
     margin-right: 10px; 
     margin-bottom: 10px;  
     cursor: pointer;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7);
 }   
 
 .apresentacao_links_link:hover {
@@ -150,6 +152,8 @@ fieldset {
     font-family: var(--fonte-secundaria);
     font-weight: 400;
     font-size: 1.6rem;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7); 
+    box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7);
 }
 
 .apresentacao_conteudo_texto a {
@@ -298,6 +302,8 @@ fieldset {
     font-size: 2.4rem;
     background: var(--cor-tercearia);
     font-weight: 600;
+    -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7); 
+box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px -10px 25px 14px rgba(0,0,0,0.7);
 }
 
 .container__contato--form button:hover {
